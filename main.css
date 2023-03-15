@@ -1,0 +1,601 @@
+h1,h2 {
+    padding: 0;
+    margin: 0
+}
+
+.player {
+    padding-top: 10px;
+    padding-right: 113px
+}
+
+#current {
+    padding-left: 60px
+}
+
+.control {
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    cursor: pointer;
+    color: #fff
+}
+
+#play {
+    padding: 15px
+}
+
+#playbtn:hover {
+    -webkit-text-fill-color: #fff
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px
+}
+
+#current {
+    text-align: right
+}
+
+.bar {
+    --space: -4px;
+    background-color: #24242424;
+    overflow: hidden;
+    left: var(--space);
+    right: var(--space);
+    top: var(--space);
+    bottom: var(--space);
+    position: absolute;
+    border-radius: 64px;
+    z-index: -2
+}
+
+#progress {
+    display: blcok;
+    width: var(--progress,0);
+    background-color: #fff;
+    transition: all 1s linear;
+    height: 100%
+}
+
+.intro {
+    padding: 20px;
+    width: 90%;
+    max-width: 1300px;
+    margin: 40px auto;
+    background: rgba(30, 51, 51, 0.1);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.25);
+    border-radius: 10px
+}
+
+.intro-flex {
+    justify-content: space-between
+}
+
+.flame-profile,.intro-flex {
+    display: flex;
+    align-items: center
+}
+
+.flame-profile h1 {
+    color: silver
+}
+
+.stats-title {
+    text-align: center
+}
+
+.flame-profile h1 span {
+    background: #fffdfd;
+    border-radius: 7px;
+    color: #fff
+}
+
+.badge,.flame-profile h1 span {
+    margin-left: 4.5px;
+    padding: 3px 5px
+}
+
+.badge {
+    font-size: 13px;
+    background: #3b3f41;
+    border-radius: 3px;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: default
+}
+
+@media(max-width: 440px) {
+    .badge {
+        margin-top:90px;
+        margin-right: 25px
+    }
+}
+
+.intro .links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap
+}
+
+.intro .link {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: -20px;
+    padding: 20px;
+    transition: .3s ease-in-out
+}
+
+.link-vk:hover {
+    border: 3px solid #1a1b1d
+}
+
+.link-tg:hover {
+    border: 3px solid rgb(43, 44, 44)
+}
+
+.link-inst:hover {
+    border: 3px solid #978088
+}
+
+.intro .me {
+    display: flex;
+    align-items: center
+}
+
+.intro .me img {
+    border-radius: 50%;
+    margin-right: 10px
+}
+
+.big-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px
+}
+
+.bigbtn-container {
+    display: block;
+    width: 50%;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 15px;
+    background: #2d2d2e;
+    border-radius: 10px;
+    transition: .3s ease-in-out
+}
+
+@media(max-width: 440px) {
+    .big-buttons {
+        display:block
+    }
+
+    .bigbtn-container {
+        width: auto;
+        margin-top: 20px
+    }
+}
+
+.bigbtn-container3 {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+    padding: 10px 15px;
+    background: #ffffff;
+    border-radius: 10px;
+    transition: .3s ease-in-out
+}
+
+.bigbtn-container2 {
+    background: #352a32ab
+}
+
+.bigbtn-container:hover {
+    transform: translateY(-2px);
+    transition: .3s ease-in-out;
+    background: #29292b
+}
+
+.bigbtn-container2:hover {
+    transform: translateY(-2px);
+    background: rgb(36, 37, 37)
+}
+
+.bigbtn-container3:hover {
+    transform: translateY(-2px);
+    background: rgb(255, 255, 255)
+}
+
+.about-me {
+    margin-top: 20px
+}
+
+.aboutme-title,.friends-title,.pretners-title,.projects-title,.store-title {
+    text-align: center;
+    font-size: 30px
+}
+
+.aboutme-text {
+    margin-top: 10px;
+    border: 2px solid rgba(0,0,0,.2);
+    padding: 25px;
+    border-radius: 7px;
+    background: rgba(0,0,0,.4)
+}
+
+.projects {
+    margin-top: 25px
+}
+
+.projects-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px
+}
+
+.projects-card {
+    display: block;
+    width: 350px;
+    text-align: center;
+    border: 2px solid rgba(0,0,0,.2);
+    padding: 15px;
+    border-radius: 7px;
+    transition: .3s;
+    background: rgba(0,0,0,.4)
+}
+
+.projects-card:hover {
+    border: 2px solid #3a3a42;
+    transition: .4s;
+    transform: scale(1.05)
+}
+
+.fames {
+    margin-top: 25px
+}
+
+.fames-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px
+}
+
+.fames-card {
+    display: block;
+    width: 350px;
+    text-align: center;
+    border: 2px solid rgba(0,0,0,.2);
+    padding: 15px;
+    border-radius: 7px;
+    transition: .3s;
+    background: rgba(0,0,0,.4)
+}
+
+.fames-card img {
+    border-radius: 50%;
+    margin-bottom: 10px
+}
+
+.fames-card a {
+    font-size: 18px;
+    transition: .2s ease-in-out
+}
+
+.fames-card:hover {
+    border: 2px solid #fdfcfc;
+    transition: .4s;
+    transform: scale(1.05)
+}
+
+.fames-card a:hover {
+    color: #f3f3f3
+}
+
+.fames-title {
+    text-align: center
+}
+
+.valorant {
+    position: relative
+}
+
+.valorant:hover {
+    border: 2px solid #f0f00a;
+    transition: .4s;
+    transform: scale(1.05)
+}
+
+.lite {
+    position: relative
+}
+
+.lite:hover {
+    border: 2px solid #292626;
+    transition: .4s;
+    transform: scale(1.05)
+}
+
+.hatory {
+    position: relative
+}
+
+.star {
+    position: absolute;
+    right: 340px;
+    bottom: 110px;
+    font-size: 25px;
+    color: #fcfcfc
+}
+
+.hatory:hover {
+    border: 2px solid #ffffff;
+    transition: .4s;
+    transform: scale(1.05)
+}
+
+.partners {
+    margin-top: 25px
+}
+
+.partners-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px
+}
+
+.partners-card {
+    display: block;
+    width: 350px;
+    text-align: center;
+    border: 2px solid rgba(0,0,0,.2);
+    padding: 15px;
+    border-radius: 7px;
+    transition: .3s;
+    background: rgba(0,0,0,.4)
+}
+
+.partners-card img {
+    border-radius: 50%;
+    margin-bottom: 10px
+}
+
+.partners-card a {
+    font-size: 18px;
+    transition: .2s ease-in-out
+}
+
+.partners-card:hover {
+    border: 2px solid #2c2727;
+    transition: .4s;
+    transform: scale(1.05)
+}
+
+.partners-card a:hover {
+    color: #27232c
+}
+
+.team-card {
+    display: block;
+    width: 350px;
+    text-align: center;
+    border: 2px solid rgba(0,0,0,.2);
+    padding: 15px;
+    transition: .3s;
+    border-radius: 7px;
+    background: rgba(0,0,0,.4)
+}
+
+.team-card img {
+    border-radius: 50%;
+    margin-bottom: 10px
+}
+
+.team-card a {
+    font-size: 18px;
+    transition: .2s ease-in-out
+}
+
+.team-card a:hover {
+    color: #3c3841
+}
+
+.team-card:hover {
+    border: 1px solid #fff;
+    transition: .3s;
+    transform: scale(1.05)
+}
+
+.projects-card img {
+    border-radius: 50%;
+    margin-bottom: 10px
+}
+
+.projects-card a {
+    font-size: 18px;
+    transition: .2s ease-in-out
+}
+
+.projects-card a:hover {
+    color: #77737c
+}
+
+.made {
+    text-align: center;
+    margin-top: 25px
+}
+
+@media(max-width: 775px) {
+    .intro-flex {
+        display:block;
+        text-align: center
+    }
+
+    .intro .links,.me {
+        justify-content: center
+    }
+
+    .intro .links {
+        margin-top: 15px
+    }
+}
+
+.price,.stats {
+    margin-top: 25px
+}
+
+.price-container,.stats-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.price-block,.stats-block {
+    transition: .3s;
+    width: 300px;
+    text-align: center;
+    border: 2px solid rgba(136, 0, 0, 0.2);
+    padding: 25px;
+    border-radius: 7px;
+    background: rgba(46, 42, 42, 0.4);
+    margin: 20px
+}
+
+.price-block:hover,.stats-block {
+    transform: scale(1.07);
+    transition: .3s
+}
+
+.price-block.wow {
+    border: 2px solid #0c0a0a
+}
+
+.price-block.wow2 {
+    border: 2px solid #11100e
+}
+
+.price-block.wow3 {
+    border: 2px solid #181716
+}
+
+.stats-number {
+    color: #fafafa;
+    font-size: 30px;
+    margin-bottom: 15px
+}
+
+.price-title,.stats-value {
+    font-family: Hauora Medium,Arial;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px
+}
+
+.price-value {
+    color: #fafafa;
+    font-size: 30px;
+    margin-top: 15px
+}
+
+.price-attention {
+    background: rgba(0,0,0,.4);
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #6e7070;
+    margin: 10px
+}
+
+.price-attention a {
+    display: inline
+}
+
+.price-attention2 {
+    background: rgba(170, 4, 4, 0.4);
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #272222;
+    margin: 10px
+}
+
+.price-attention b {
+    color: #913b3ba4
+}
+
+.price-attention2 b {
+    color: #c98e21
+}
+
+.price hr {
+    outline: 0;
+    padding: 0;
+    margin-top: 15px;
+    border: 1px solid #fff;
+    margin: 10px;
+    display: none
+}
+
+:root {
+    --bg-gradient: linear-gradient(90deg,#aa4b6b,#6b6b83,#3b8d99)
+}
+
+@font-face {
+    font-family: Hauora Regular;
+    src: url(/fonts/Hauora-Regular.b0cb4241.ttf)
+}
+
+@font-face {
+    font-family: Hauora Medium;
+    src: url(/fonts/Hauora-Medium.0765a0fd.ttf)
+}
+
+@font-face {
+    font-family: Hauora Bold;
+    src: url(/fonts/Hauora-Bold.221907bb.ttf)
+}
+
+body {
+    font-family: Hauora Bold,Arial;
+    background: #000;
+    background: linear-gradient(0deg,#000 8%,#232224);
+    color: #ddd;
+    padding: 0;
+    margin: 0
+}
+
+a,button {
+    display: block;
+    color: #ddd;
+    font-size: 15px;
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    background: 0;
+    cursor: pointer
+}
+
+::-webkit-scrollbar {
+    background: #000
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fdfdfd;
+    border: 5px solid #000;
+    border-radius: 1rem
+}
